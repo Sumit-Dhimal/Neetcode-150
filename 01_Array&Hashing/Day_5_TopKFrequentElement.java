@@ -15,6 +15,7 @@ public class Day_5_TopKFrequentElement {
       }
 
       // Step-2 Use bucket array of size (N+1) to arrange according to occurance/frequency
+      @SuppressWarnings("unchecked")
       ArrayList<Integer> [] bucket = new ArrayList[nums.length+1]; // Array of ArrayList
       for(int key : map.keySet()) {
         int freq = map.get(key);
